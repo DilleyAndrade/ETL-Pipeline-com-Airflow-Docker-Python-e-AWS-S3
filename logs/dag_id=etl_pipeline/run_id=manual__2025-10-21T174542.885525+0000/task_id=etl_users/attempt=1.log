@@ -1,0 +1,19 @@
+{"timestamp":"2025-10-21T17:45:52.908602Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-10-21T17:45:52.917532Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-10-21T17:46:01.585945Z","level":"error","event":"Process timed out, PID: 126","logger":"airflow.models.dagbag","filename":"dagbag.py","lineno":134}
+{"timestamp":"2025-10-21T17:46:01.587829Z","level":"error","event":"Exception ignored in: <function WeakKeyDictionary.__init__.<locals>.remove at 0x7c43427e8220>","logger":"task.stderr"}
+{"timestamp":"2025-10-21T17:46:01.588409Z","level":"error","event":"Traceback (most recent call last):","logger":"task.stderr"}
+{"timestamp":"2025-10-21T17:46:01.589687Z","level":"error","event":"  File \"/usr/python/lib/python3.12/weakref.py\", line 369, in remove","logger":"task.stderr"}
+{"timestamp":"2025-10-21T17:46:01.590077Z","level":"error","event":"    def remove(k, selfref=ref(self)):","logger":"task.stderr"}
+{"timestamp":"2025-10-21T17:46:01.590476Z","level":"error","event":"","logger":"task.stderr"}
+{"timestamp":"2025-10-21T17:46:01.590789Z","level":"error","event":"  File \"/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py\", line 135, in handle_timeout","logger":"task.stderr"}
+{"timestamp":"2025-10-21T17:46:01.591241Z","level":"error","event":"    raise AirflowTaskTimeout(error_message)","logger":"task.stderr"}
+{"timestamp":"2025-10-21T17:46:01.591590Z","level":"error","event":"airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/etl_pipeline.py after 5.0s.","logger":"task.stderr"}
+{"timestamp":"2025-10-21T17:46:01.591902Z","level":"error","event":"Please take a look at these docs to improve your DAG import time:","logger":"task.stderr"}
+{"timestamp":"2025-10-21T17:46:01.592189Z","level":"error","event":"* https://airflow.apache.org/docs/apache-airflow/3.1.0/best-practices.html#top-level-python-code","logger":"task.stderr"}
+{"timestamp":"2025-10-21T17:46:01.592427Z","level":"error","event":"* https://airflow.apache.org/docs/apache-airflow/3.1.0/best-practices.html#reducing-dag-complexity, PID: 126","logger":"task.stderr"}
+{"timestamp":"2025-10-21T17:46:01.808664Z","level":"warning","event":"The `airflow.decorators.dag` attribute is deprecated. Please use `'airflow.sdk.dag'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/etl_pipeline.py","lineno":2,"logger":"py.warnings"}
+{"timestamp":"2025-10-21T17:46:01.808920Z","level":"warning","event":"The `airflow.decorators.task` attribute is deprecated. Please use `'airflow.sdk.task'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/etl_pipeline.py","lineno":2,"logger":"py.warnings"}
+{"timestamp":"2025-10-21T17:46:03.146054Z","level":"info","event":"Connection https://fakestoreapi.com/users success","logger":"task.stdout"}
+{"timestamp":"2025-10-21T17:46:04.129621Z","level":"info","event":"Users parquet file saved success!","logger":"task.stdout"}
+{"timestamp":"2025-10-21T17:46:04.137483Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":218}
