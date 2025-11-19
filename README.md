@@ -2,13 +2,8 @@
 
 ### 🚀 Extração de dados → Transformação → Geração de Parquet → Upload para o S3 → Limpeza local
 
-```{=html}
-<p align="center">
-```
-`<img src="image_pipeline/pipeline_etl.png" alt="ETL Pipeline" width="85%">`{=html}
-```{=html}
-</p>
-```
+![ETL Pipeline](image_pipeline/pipeline_etl.png)
+
 Este projeto implementa um pipeline ETL completo usando **Apache
 Airflow**, totalmente orquestrado em **Docker**, com tarefas escritas em
 **Python** para extrair dados da *Fake Store API*, transformar em
